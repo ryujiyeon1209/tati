@@ -53,19 +53,19 @@ public class Member {
     private LocalDateTime createdDate;
 
     //가입한 스터디 목록
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
-    List<StudyMember> studyList = new ArrayList<>();
+//    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+//    List<StudyMember> studyList = new ArrayList<>();
 
     //신청한 스터디 목록
 
 
     //내가 쓴 게시글 목록
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
-    List<Board> boardList = new ArrayList<>();
+//    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+//    List<Board> boardList = new ArrayList<>();
 
     //열정지수 내역
-    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
-    List<Score> scoreList = new ArrayList<>();
+//    @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
+//    List<Score> scoreList = new ArrayList<>();
 
     //입퇴실 내역
     @OneToMany(mappedBy = "member", cascade = CascadeType.ALL)
