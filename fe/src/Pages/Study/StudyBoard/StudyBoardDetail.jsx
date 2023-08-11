@@ -37,6 +37,7 @@ const StudyBoardDetail = () => {
     useEffect(() => {
         apiClient.get(`study/board/${boardId}`)
             .then((res) => {
+                console.log(res.data);
                 setBoardData(res.data)
             })
             .catch((err) => {
@@ -77,7 +78,7 @@ const StudyBoardDetail = () => {
     // 삭제버튼
     const handleDeleteBtnClick = () => {
         // console.log("대표글axios적용할것")
-        apiClient.post('study/notice/main', { boardId, memberId }, config)
+        apiClient.delete('study/board/main', { boardId, memberId }, config)
             .then((res) => {
                 console.log(res.data)
             })

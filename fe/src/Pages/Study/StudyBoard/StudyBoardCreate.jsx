@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import { apiClient } from '../../../api/apiClient';
+import { useSelector } from 'react-redux';
 
 const StudyBoardCreate = () => {
     const navigate = useNavigate();
     const { studyId, boardType } = useOutletContext();
+    const user = useSelector(state => state.user.user);
     // 0 : 공지 1: 스터디 공지 2: 스터디 게시판 9: FAQ
 
     const [boardBody, setBoardBody] = useState({
@@ -14,7 +16,7 @@ const StudyBoardCreate = () => {
         // 내용 String
         studyId,
         // 스터디id int
-        memberId: 4
+        memberId: user.memberId,
         // 멤버id  int
         // 공지사항 생성 시는 제목,내용,스터디id,멤버id  request body에 담아줄것
 
@@ -62,6 +64,7 @@ const StudyBoardCreate = () => {
             apiClient.post(subUrl, formData, config)
             .then((res) => {
                 console.log(res)
+                handleCancleBtnClick()
             })
             .catch((err) => {
                 console.log(err)
@@ -69,9 +72,12 @@ const StudyBoardCreate = () => {
 
         }else{
             console.log("스터디 공지 작성")
+            console.log(user.memberId);
+
             apiClient.post(subUrl, boardBody)
             .then((res) => {
                 console.log(res)
+                handleCancleBtnClick()
             })
             .catch((err) => {
                 console.log(err)
