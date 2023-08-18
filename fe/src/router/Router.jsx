@@ -179,9 +179,9 @@ export default function Router() {
           }
         </div>
 
-      </div>
+      </div >
 
-      <Routes>
+      <Routes className={style.app_box}>
 
         <Route path="/" element={<Main />} />
 

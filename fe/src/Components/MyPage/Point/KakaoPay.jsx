@@ -245,7 +245,7 @@ export default function KakaoPay() {
     }
   };
 
-  const totalPages = Math.ceil(point.length / itemsPerPage);
+  const totalPages = Math.max(Math.ceil(point.length / itemsPerPage),1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;

@@ -99,7 +99,7 @@ export default function MyPost(){
     }
   };
 
-  const totalPages = Math.ceil(myPost.length / itemsPerPage) + 1;
+  const totalPages = Math.max(Math.ceil(myPost.length / itemsPerPage), 1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;

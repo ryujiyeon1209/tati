@@ -88,7 +88,7 @@ export default function RewardPoint() {
   };
 
 
-  const totalPages = Math.ceil(usePoint.length / itemsPerPage) +1;
+  const totalPages = Math.max(Math.ceil(usePoint.length / itemsPerPage),1);
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;

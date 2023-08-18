@@ -98,8 +98,7 @@ export default function JoinStudy(){
     }
   };
 
-  const totalPages = Math.ceil(joinStudy.length / itemsPerPage);
-
+  const totalPages = Math.max(Math.ceil(joinStudy.length / itemsPerPage), 1);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   const currentNotices = joinStudy.slice(startIndex, endIndex);
