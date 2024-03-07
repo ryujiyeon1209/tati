@@ -1,8 +1,6 @@
 
 # 💻타티 - 자동으로 출석과 벌금을 정산하는 온라인 스터디💻
-<p align="center">
-<img src="https://github.com/ryujiyeon1209/tati/assets/122500615/75c83a4f-a398-47eb-9a9f-841dd80088d0" width="700" height="400"/>
-</p>
+![img](https://github.com/ryujiyeon1209/tati/assets/122500615/c11ea05d-9252-48a2-a62c-0faf0ff1ec9c)
 
 <br/>
 
@@ -36,37 +34,73 @@
 ## 📢 주요 기능 📢
 ### 📚회원가입 및 로그인
 > **회원가입한 이메일과 비밀번호를 입력해 로그인 합니다.**  <br/>
-  **로그인을 완료하면, 플랫폼 메인페이지로 이동합니다.**
-<img width="600" height="350" src="https://github.com/ryujiyeon1209/tati/assets/122500615/f0865c84-f2aa-4fbb-8607-339c97a57c33">
+  **로그인을 완료하면, 플랫폼 메인페이지로 이동합니다.** <br/>
+  
+![img (1)](https://github.com/ryujiyeon1209/tati/assets/122500615/1f1c2fd7-a51a-49ab-aadf-74a3ee165a2a)
+
+
+
 <br/><br/>
 
 ### 📚스터디 조회
 > **카테고리/키워드를 활용하여 스터디를 조회할 수 있습니다.**  <br/>
-> **비공개 스터디는 비밀번호를 입력해야 합니다**
-<img width="500" height="300" src="https://github.com/ryujiyeon1209/tati/assets/122500615/a6c5079f-0fc3-415f-a71c-714f9fe9dc03">
-<img width="500" height="300" src="https://github.com/ryujiyeon1209/tati/assets/122500615/b9943180-130a-4b47-89fb-5147e2dde831">
+> **비공개 스터디는 비밀번호를 입력해야 합니다** <br/>
+
+![img (2)](https://github.com/ryujiyeon1209/tati/assets/122500615/ce8ab45e-eabb-473d-9ee7-cf927c1e1050)
+![img (3)](https://github.com/ryujiyeon1209/tati/assets/122500615/6c0289f9-d6dc-44d4-8cb6-338df998c729)
 <br/><br/>
 
 ### 📚스터디 룸
 > **온라인 스터디는 입실시간 10분 전에 입장 버튼이 활성화됩니다.** <br/>
 > **가입 신청 현황에서 방장이 신청한 회원을 선별하여 승인/거절이 가능합니다.** <br/>
-> **스터디 탈퇴 시 보증금이 반환됩니다.**
-<img width="600" height="850" src="https://github.com/ryujiyeon1209/tati/assets/122500615/314e8430-cedd-4c61-ad69-ccbf2bd545eb">
+> **스터디 탈퇴 시 보증금이 반환됩니다.** <br/>
+
+![img (4)](https://github.com/ryujiyeon1209/tati/assets/122500615/d4070abd-16ce-4c8b-922d-8b8314b709f0)
+
 <br/><br/>
 
 ### 📚스터디 게시판
 > **스터디마다 게시판이 존재하며, 게시글과 댓글을 작성할 수 있습니다.** <br/>
 > **파일이나 이미지 등을 업로드/다운로드 할 수 있습니다.**
-<img width="600" height="350" src="https://github.com/ryujiyeon1209/tati/assets/122500615/5d56cad6-b955-4556-a06a-f4c54830f0fd">
-<br/><br/>
 
+![img (5)](https://github.com/ryujiyeon1209/tati/assets/122500615/e57c75e0-663f-4a18-badc-fc74bfd0ccb8)
+<br/><br/>
 
 ### 📚 마이페이지
 > **포인트 내역을 조회할 수 있으며, 카카오페이를 통해 충전이 가능합니다.** <br/>
 
-<img width="500" height="300" src="https://github.com/ryujiyeon1209/tati/assets/122500615/71c8e73b-c2dc-4c6c-915b-4cfe41c71065"><br/>
-<img width="500" height="300" src="https://github.com/ryujiyeon1209/tati/assets/122500615/a4087dad-d1da-4ad1-8214-b6411140abe1">
-<img width="500" height="300" src="https://github.com/ryujiyeon1209/tati/assets/122500615/44c44305-a19e-4018-b791-7e68f8d95c36">
+![img (6)](https://github.com/ryujiyeon1209/tati/assets/122500615/27c23b45-add2-4635-811f-4491c35f6e3b)
+![img (8)](https://github.com/ryujiyeon1209/tati/assets/122500615/c906f2e7-a608-42bf-93fe-5b55db640652)
+![img (7)](https://github.com/ryujiyeon1209/tati/assets/122500615/dd2e3c9e-9519-46f4-86ce-f64c85fae1b9)
+<br/>
+
+> **마이페이지에서 가입한 스터디/신청한 스터디/작성게시글 조회가 가능합니다.**
+
+![img (9)](https://github.com/ryujiyeon1209/tati/assets/122500615/7aadb330-5d10-4475-b31c-081449e3b919)
+
+<br/><br/>
+
+## 🔧 기술 스택 ##
+
+| 개발 언어/프로그램 | 배포 환경 | 라이브러리/오픈소스 | 
+| --- | --- | --- |
+| Java 11 | AWS EC2 | Spring Boot 2.7.13 | Nginx 1.18.0 |
+| JavaScript | Docker | JPA | Jenkins |
+| Intellij | Nginx | Node 14.17.0 | AWS EC2 |
+| MySQL |  | React 18.2.0 |  |
+| Retrofit |  | Openvidu 2.28.0 |  |
+| Redis |  | AWS S3 |  |
+| VSCode |  |  |  |
+
+<br/><br/>
+
+## [💾 ERD 💾](https://github.com/ryujiyeon1209/tati/assets/122500615/c6abac6c-a2de-40ad-8134-28cae6f07f19)
+<img width="1162" alt="4" src="https://github.com/ryujiyeon1209/tati/assets/122500615/cfee57e9-614e-4a07-b9b3-c34ab9b6af81">
+<br/><br/>
+
+
+## [📜사용자요구사항명세서📜](https://github.com/ryujiyeon1209/tati/assets/122500615/45104723-7908-4c96-b12b-60460338e148)
+![img (10)](https://github.com/ryujiyeon1209/tati/assets/122500615/73066197-6cf9-4fe4-99f8-cdb8a6c44bb9)
 
 
 
